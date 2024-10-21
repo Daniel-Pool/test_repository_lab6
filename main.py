@@ -1,6 +1,6 @@
 #Daniel Pool's Repository "test_repository_lab6"
 
-def encoder (code):
+def encoder (code): #By: Daniel Pool
     encoded = ""
     for i in code:
         encoded += str((int(i) + 3) % 10)
@@ -11,7 +11,7 @@ def decode(code): #Steven Lin's Part
     pass
 
 
-def selected_option(user_option):
+def selected_option(user_option): #By: Daniel Pool
     global encoded_password
     global decoded_password
     global original_password
@@ -30,7 +30,7 @@ def selected_option(user_option):
         cont = False
 
 
-def main():
+def main(): #By: Daniel Pool
     global encoded_password
     global decoded_password
     global original_password
@@ -49,7 +49,7 @@ def main():
         selected_option(options)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': #By: Daniel Pool
     encoded_password = ""
     decoded_password = ""
     original_password = ""
