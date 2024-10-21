@@ -21,10 +21,12 @@ def selected_option(user_option): #By: Daniel Pool
         original_password = input("Please enter your password to encode: ")
         encoded_password = encoder(original_password)
         print("Your password has been encoded and stored!")
+        print("")
 
     if user_option == '2':
         decoded_password = decode(encoded_password)
         print(f"The encoded password is {encoded_password}, and the original password is {original_password}")
+        print("")
 
     if user_option == '3':
         cont = False
