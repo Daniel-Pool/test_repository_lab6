@@ -7,8 +7,11 @@ def encoder (code): #By: Daniel Pool
     return encoded
 
 
-def decode(code): #Steven Lin's Part
-    pass
+def decode(encoded): #By: Steven Lin
+    decoded = ""
+    for digit in encoded:
+        decoded += str((int(digit) - 3) % 10)
+    return decoded
 
 
 def selected_option(user_option): #By: Daniel Pool
